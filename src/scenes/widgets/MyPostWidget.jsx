@@ -45,7 +45,7 @@ import {
         formData.append("picture", image);
         formData.append("picturePath", image.name);
       }
-  
+  console.log(handlePost)
       const response = await fetch(`http://localhost:3001/posts`, {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
